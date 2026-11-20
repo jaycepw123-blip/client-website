@@ -110,7 +110,7 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 .steps li::before { position: absolute; top: 0; left: 0; display: grid; place-items: center; width: 2rem; height: 2rem; border: 1px solid #6b5386; border-radius: 5px; background: #2b1e3c; color: var(--lilac); content: counter(step, decimal-leading-zero); font: 800 .78rem var(--mono); }
 .steps h3 { font-size: 1rem; }
 .steps p, .requirements p:last-child { margin-top: .35rem; color: var(--muted); font-size: .93rem; line-height: 1.65; }
-.steps a { display: inline-block; min-height: 44px; padding-block: .65rem; vertical-align: middle; color: var(--lilac); text-underline-offset: .15em; }
+.steps a { color: var(--lilac); text-underline-offset: .15em; }
 .steps a:hover { color: var(--accent); }
 .steps .paths { margin: .4rem 0 0; padding-left: 1.1rem; color: var(--muted); font-size: .88rem; line-height: 1.7; }
 .steps .paths li { min-height: 0; padding-left: 0; counter-increment: none; }
