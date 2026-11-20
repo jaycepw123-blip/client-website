@@ -29,6 +29,8 @@ kbd { padding: .14em .46em; border: 1px solid #625475; border-bottom-width: 3px;
 .header-inner, .footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .header-inner { min-height: 74px; }
 .brand, nav a, .footer a { text-decoration: none; }
+.brand, nav a, .footer a { min-height: 44px; }
+nav a, .footer > a:last-child { display: inline-flex; align-items: center; min-width: 44px; }
 .brand { display: inline-flex; align-items: center; gap: .65rem; flex-shrink: 0; font: 800 .92rem var(--mono); letter-spacing: .09em; }
 .brand img { border-radius: 7px; image-rendering: pixelated; }
 nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(.8rem, 3vw, 2.6rem); color: var(--muted); font-size: .9rem; font-weight: 600; }
@@ -93,7 +95,7 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 .card-index { padding: .26rem .33rem; border-radius: 4px; background: #302144; color: var(--lilac); font: 700 .75rem var(--mono); }
 .module-count { color: var(--muted); font: .68rem var(--mono); }
 .module-desc { color: var(--muted); font-size: .88rem; line-height: 1.45; }
-.module-card ul { columns: 2; column-gap: 1.35rem; margin: 0; padding: .95rem .8rem 1rem 1.75rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; line-height: 1.5; }
+.module-card ul { columns: 12rem 2; column-gap: 1.35rem; margin: 0; padding: .95rem .8rem 1rem 1.75rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .module-card li { break-inside: avoid; margin-bottom: .35rem; }
 .module-card li::marker { color: var(--lilac); }
 
@@ -104,7 +106,7 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 .steps li::before { position: absolute; top: 0; left: 0; display: grid; place-items: center; width: 2rem; height: 2rem; border: 1px solid #6b5386; border-radius: 5px; background: #2b1e3c; color: var(--lilac); content: counter(step, decimal-leading-zero); font: 800 .78rem var(--mono); }
 .steps h3 { font-size: 1rem; }
 .steps p, .requirements p:last-child { margin-top: .35rem; color: var(--muted); font-size: .93rem; line-height: 1.65; }
-.steps a { color: var(--lilac); text-underline-offset: .15em; }
+.steps a { display: inline-block; min-height: 44px; padding-block: .65rem; vertical-align: middle; color: var(--lilac); text-underline-offset: .15em; }
 .steps a:hover { color: var(--accent); }
 .requirements { padding: clamp(1.1rem, 3vw, 1.75rem); border: 1px solid #514267; border-radius: 9px; background: var(--panel); }
 .requirements h2 { margin-bottom: 1.25rem; font-size: clamp(1.6rem, 3vw, 2.05rem); }
@@ -132,6 +134,7 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 @media (max-width: 450px) {
   .header-inner { flex-wrap: wrap; gap: .62rem; padding-block: .75rem; }
   nav { width: 100%; }
+  .actions .button { width: 100%; }
   .module-grid { grid-template-columns: 1fr; }
   .module-card summary { min-height: 0; }
 }
