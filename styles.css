@@ -32,6 +32,7 @@ kbd { padding: .14em .46em; border: 1px solid #625475; border-bottom-width: 3px;
 .brand { display: inline-flex; align-items: center; gap: .65rem; flex-shrink: 0; font: 800 .92rem var(--mono); letter-spacing: .09em; }
 .brand img { border-radius: 7px; image-rendering: pixelated; }
 nav { display: flex; flex-wrap: wrap; align-items: center; gap: clamp(.8rem, 3vw, 2.6rem); color: var(--muted); font-size: .9rem; font-weight: 600; }
+nav a, .footer a { display: inline-flex; align-items: center; min-height: 44px; }
 
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; align-items: center; gap: clamp(2rem, 5vw, 5rem); padding-block: clamp(3.5rem, 7vw, 6.2rem) 3.75rem; }
 .eyebrow, .art-label, .art-caption { font: 700 .75rem var(--mono); letter-spacing: .13em; }
@@ -87,8 +88,8 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 .module-card summary { position: relative; display: grid; gap: .65rem; min-height: 106px; padding: 1rem 2.25rem 1rem 1rem; cursor: pointer; list-style: none; }
 .module-card summary::-webkit-details-marker { display: none; }
 .module-card summary:hover { color: var(--accent); }
-.module-card summary::after { position: absolute; top: 1.13rem; right: .9rem; content: "+"; color: var(--lilac); font: 800 1.15rem var(--mono); }
-.module-card[open] summary::after { content: "−"; }
+.module-card summary::after { position: absolute; top: 1.13rem; right: .9rem; content: "+"; content: "+" / ""; color: var(--lilac); font: 800 1.15rem var(--mono); }
+.module-card[open] summary::after { content: "−"; content: "−" / ""; }
 .module-heading { display: flex; align-items: center; flex-wrap: wrap; gap: .45rem; font-size: 1.1rem; font-weight: 800; }
 .card-index { padding: .26rem .33rem; border-radius: 4px; background: #302144; color: var(--lilac); font: 700 .75rem var(--mono); }
 .module-count { color: var(--muted); font: .68rem var(--mono); }
