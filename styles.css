@@ -96,8 +96,11 @@ h2 { margin-block: .55rem .7rem; font-size: clamp(2rem, 4.8vw, 3.4rem); line-hei
 .card-index { padding: .26rem .33rem; border-radius: 4px; background: #302144; color: var(--lilac); font: 700 .75rem var(--mono); }
 .module-count { color: var(--muted); font: .68rem var(--mono); }
 .module-desc { color: var(--muted); font-size: .88rem; line-height: 1.45; }
-.module-card ul { columns: 12rem 2; column-gap: 1.35rem; margin: 0; padding: .95rem .8rem 1rem 1.75rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; line-height: 1.5; }
-.module-card li { break-inside: avoid; margin-bottom: .35rem; }
+.module-card ul { margin: 0; padding: .95rem 1rem 1rem 1.75rem; border-top: 1px solid var(--line); font-size: .9rem; line-height: 1.5; }
+.module-card li { break-inside: avoid; margin-bottom: .85rem; }
+.module-card li:last-child { margin-bottom: 0; }
+.module-card li strong { display: block; color: var(--text); }
+.module-description { display: block; color: var(--muted); font-size: .8rem; }
 .module-card li::marker { color: var(--lilac); }
 
 .install-band { border-block: 1px solid var(--line); background: #15111f; }
